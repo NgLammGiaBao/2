@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:auto;}
+.khung
+{
+	width: 960px;
+	background: url("../images/a2.jpg";
+}
+.anhasp
+{float:left;}
+.trai
+{float:left;}
+navtren{
+	float:right;
+	height: 50px;
+	padding-top: 10px
+}
+
+

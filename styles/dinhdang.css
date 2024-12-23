@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn logo "VNE" vào giữa khung */
+    padding: 20px;
+    border-radius: 8px; /* Bo góc khung */
+    background-color: #f7f7f7; /* Màu nền nhạt cho khung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    margin: 10px auto; /* Căn giữa khung và thêm khoảng cách phía trên */
+    max-width: 600px; /* Độ rộng tối đa của khung */
+    height: 10px; /* Chiều cao của khung */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #c00000;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center; /* Căn các chữ menu giữa trang */
+    gap: 15px;
+    margin-top: 20px; /* Tạo khoảng cách giữa menu và khung phía trên */
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+}
+
+.menu-items a.active {
+    font-weight: bold;
+    color: #c00000;
+}
+
+.menu-items a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #c00000;
+}
+
+.menu-items a:hover {
+    color: #c00000;
+}
